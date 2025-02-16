@@ -16,8 +16,6 @@ intune-scripts-toolbox/
 ├── scripts/
 │ ├── 7zip-detection.ps1
 │ └── ... (other scripts)
-├── docs/
-│ └── (additional documentation)
 └── README.md
 ```
 
