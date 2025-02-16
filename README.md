@@ -11,6 +11,7 @@ This repository contains various custom scripts for automating and simplifying t
 
 ## Repository Structure
 
+```
 intune-scripts-toolbox/
 ├── scripts/
 │ ├── 7zip-detection.ps1
@@ -18,7 +19,7 @@ intune-scripts-toolbox/
 ├── docs/
 │ └── (additional documentation)
 └── README.md
-
+```
 
 Each script file in the `scripts/` directory is intended for use in Intune deployment scenarios. Detailed information about each script is provided below.
 
