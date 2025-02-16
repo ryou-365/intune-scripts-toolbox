@@ -29,15 +29,16 @@ Each script file in the `scripts/` directory is intended for use in Intune deplo
 
 ### 1. 7-Zip Custom Detection Script
 - **Overview:**  
-  A PowerShell script that detects the presence of 7-Zip on a target device. This script can be used within Intune to validate application installations and ensure compliance with deployment requirements.
-  
+  This PowerShell script is intended for use as a custom detection rule when deploying 7-Zip as a Win32 app via Microsoft Intune. In scenarios where standard detection rules fall short—particularly when needing to verify specific version details for instances where older versions of 7-Zip have been previously deployed—this script provides a tailored solution to accurately detect the installed version.
+
 - **Usage:**  
-  1. Upload the script to your Intune portal under **Devices > Scripts**.  
-  2. Configure the script settings according to your deployment needs.  
-  3. Deploy the script to the target device groups.
+  1. Prepare your 7-Zip installer (EXE or MSI) by wrapping it into an `.intunewin` package. For detailed instructions on this process, please refer to Microsoft Learn documentation.  
+  2. In the Intune portal, when configuring the Win32 app deployment, choose to use a custom detection script under the detection rules section.  
+  3. Upload this script as your detection method to ensure that the correct version of 7-Zip is identified on target devices.
   
 - **Note:**  
-  The script is designed to serve as a template and can be customized further to meet specific organizational requirements.
+  This script addresses the limitation of standard detection rules, which may not capture version details effectively if a previous version of 7-Zip was installed. Customize the script further as needed to suit your environment's specific requirements.
+
 
 ### 2. (Additional Script Name)
 - **Overview:**  
