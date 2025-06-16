@@ -44,6 +44,7 @@ Each script file in the `scripts/` directory is intended for use in Intune deplo
 
 - **Usage:**
   Execute `daily-new-users.ps1` in a PowerShell session with the Microsoft Graph module. The account must have the `User.Read.All` permission.
+  The output file `daily_new_users.csv` will be created in the current directory.
 
 *Feel free to add new scripts following the structure above.*
 
