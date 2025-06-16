@@ -38,12 +38,13 @@ Each script file in the `scripts/` directory is intended for use in Intune deplo
   This script addresses the limitation of standard detection rules, which may not capture version details effectively if a previous version of 7-Zip was installed. Customize the script further as needed to suit your environment's specific requirements.
 
 
-### 2. (Additional Script Name)
-- **Overview:**  
-  Brief description of what the script does.
-  
-- **Usage:**  
-  Step-by-step instructions on how to implement this script in an Intune environment.
+### 2. Monthly MFA Report Script
+- **Overview:**
+  Retrieves a list of user registration details for multi-factor authentication (MFA) using Microsoft Graph and exports the data to a CSV file.
+
+- **Usage:**
+  1. Ensure the executing account has the `Reports.Read.All` permission.
+  2. Run `monthly-mfa-report.ps1`. The script connects to Microsoft Graph and saves the report as `monthly_mfa_report.csv` in the same directory.
 
 *Feel free to add new scripts following the structure above.*
 
