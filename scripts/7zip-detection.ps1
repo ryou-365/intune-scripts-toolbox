@@ -29,6 +29,7 @@ if (Test-Path $primaryPath) {
     $filePath = $secondaryPath
 } else {
     Write-Output "7-Zip executable not found"
+    Write-Error "7-Zip executable not found"
     exit 1
 }
 
