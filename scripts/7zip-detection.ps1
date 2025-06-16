@@ -21,7 +21,7 @@ Verifies that 7-Zip version 24.09 is installed on the system.
 param([string]$ExpectedVersion = '24.09')
 
 $primaryPath = "C:\Program Files\7-Zip\7z.exe"
-$secondaryPath = "C:\Program Files (x86)\7-Zip\7z.exe"
+$secondaryPath = "${env:ProgramFiles(x86)}\7-Zip\7z.exe"
 
 if (Test-Path $primaryPath) {
     $filePath = $primaryPath
