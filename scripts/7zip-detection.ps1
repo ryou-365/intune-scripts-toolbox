@@ -1,9 +1,14 @@
 param([string]$ExpectedVersion = '24.09')
 
-$filePath = "C:\Program Files\7-Zip\7z.exe"
+$primaryPath = "C:\Program Files\7-Zip\7z.exe"
+$secondaryPath = "C:\Program Files (x86)\7-Zip\7z.exe"
 
-if (-not (Test-Path $filePath)) {
-    Write-Output "7-Zip executable not found at $filePath"
+if (Test-Path $primaryPath) {
+    $filePath = $primaryPath
+} elseif (Test-Path $secondaryPath) {
+    $filePath = $secondaryPath
+} else {
+    Write-Output "7-Zip executable not found"
     exit 1
 }
 
