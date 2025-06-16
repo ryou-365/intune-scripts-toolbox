@@ -43,7 +43,7 @@ Each script file in the `scripts/` directory is intended for use in Intune deplo
   Retrieves Azure AD users created within the last 24 hours and exports the results to `daily_new_users.csv`.
 
 - **Usage:**
-  Execute `daily-new-users.ps1` in a PowerShell session where the Microsoft Graph module is available. The account running the script must have the `User.Read.All` permission.
+  Execute `daily-new-users.ps1` in a PowerShell session with the Microsoft Graph module. The account must have the `User.Read.All` permission.
 
 *Feel free to add new scripts following the structure above.*
 

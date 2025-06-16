@@ -1,9 +1,11 @@
-# Script: daily-new-users.ps1
-# Overview: Retrieves users created within the last 24 hours via Microsoft Graph
-#           and exports the results to 'daily_new_users.csv'.
-# Required Permission: User.Read.All
-
-param()
+<#
+.SYNOPSIS
+    Export newly created Azure AD users from the last 24 hours.
+.DESCRIPTION
+    Connects to Microsoft Graph and exports users created in the last 24 hours
+    to 'daily_new_users.csv'.
+    Required permission: User.Read.All
+#>
 
 Connect-MgGraph -Scopes "User.Read.All"
 
