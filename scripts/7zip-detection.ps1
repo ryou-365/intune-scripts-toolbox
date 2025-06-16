@@ -1,3 +1,5 @@
+param([string]$ExpectedVersion = '24.09')
+
 $filePath = "C:\Program Files\7-Zip\7z.exe"
 
 if (-not (Test-Path $filePath)) {
@@ -9,7 +11,7 @@ $FileVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($filePath).F
 # The below line trims the spaces before and after the version name
 $FileVersion = $FileVersion.Trim()
 
-if ("24.09" -eq $FileVersion)
+if ($FileVersion -eq $ExpectedVersion)
 {
     # Write the version to STDOUT by default
     $FileVersion

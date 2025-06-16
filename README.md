@@ -33,6 +33,7 @@ Each script file in the `scripts/` directory is intended for use in Intune deplo
   1. Prepare your 7-Zip installer (EXE or MSI) by wrapping it into an `.intunewin` package. For detailed instructions on this process, please refer to Microsoft Learn documentation.  
   2. In the Intune portal, when configuring the Win32 app deployment, choose to use a custom detection script under the detection rules section.  
   3. Upload this script as your detection method to ensure that the correct version of 7-Zip is identified on target devices.
+  4. Optionally specify a different version using the `-ExpectedVersion` parameter (defaults to `24.09`).
   
 - **Note:**  
   This script addresses the limitation of standard detection rules, which may not capture version details effectively if a previous version of 7-Zip was installed. Customize the script further as needed to suit your environment's specific requirements.
