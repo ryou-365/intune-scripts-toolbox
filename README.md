@@ -38,12 +38,12 @@ Each script file in the `scripts/` directory is intended for use in Intune deplo
   This script addresses the limitation of standard detection rules, which may not capture version details effectively if a previous version of 7-Zip was installed. Customize the script further as needed to suit your environment's specific requirements.
 
 
-### 2. (Additional Script Name)
-- **Overview:**  
-  Brief description of what the script does.
-  
-- **Usage:**  
-  Step-by-step instructions on how to implement this script in an Intune environment.
+### 2. Daily New Users Report
+- **Overview:**
+  Retrieves Azure AD users created within the last 24 hours and exports the results to `daily_new_users.csv`.
+
+- **Usage:**
+  Execute `daily-new-users.ps1` in a PowerShell session where the Microsoft Graph module is available. The account running the script must have the `User.Read.All` permission.
 
 *Feel free to add new scripts following the structure above.*
 
