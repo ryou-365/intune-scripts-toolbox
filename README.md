@@ -38,14 +38,16 @@ Each script file in the `scripts/` directory is intended for use in Intune deplo
   This script addresses the limitation of standard detection rules, which may not capture version details effectively if a previous version of 7-Zip was installed. Customize the script further as needed to suit your environment's specific requirements.
 
 
-### 2. (Additional Script Name)
-- **Overview:**  
-  Brief description of what the script does.
-  
-- **Usage:**  
-  Step-by-step instructions on how to implement this script in an Intune environment.
-
 *Feel free to add new scripts following the structure above.*
+
+<!-- Example template for adding a new script section
+### X. (Script Name)
+- **Overview:**
+  Short explanation of what the script does.
+
+- **Usage:**
+  Steps describing how to use the script in an Intune deployment.
+-->
 
 ---
 
